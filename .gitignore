@@ -1,0 +1,5 @@
+# Exclude composer dependencies in the vendor directory
+/vendor
+
+/node_modules
+/node_modules/*
