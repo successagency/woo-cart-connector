@@ -10,7 +10,7 @@ jQuery(function() {
     console.log($.inArray(firstDomain, [maskDomain, `www.${maskDomain}`]))
     if ( $.inArray(firstDomain, [maskDomain, `www.${maskDomain}`]) == -1 ) {
 
-        $(document).on('click', 'a[href*="/checkout"]', function(e){
+        $(document).on('click', 'a[href*="/checkout"], .wcc-checkout-btn', function(e){
             e.preventDefault();
             $.ajax({
                 url: '/wp-json/wc/store/v1/cart/items',
